@@ -1,0 +1,102 @@
+body{
+    color: black;
+    background-image: url("images/admin-bg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+.form{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    background-color: #19979e;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.form input[type="text"],.box input[type="password"]{
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px auto;
+    margin-top:-10px;
+    text-align: center;
+    border: 2px solid #f27474;
+    padding: 10px 8px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.form input[type="text"]:focus,.box input[type="password"]:focus{
+    border-color: #f7f7f7;
+    color: black;
+}
+.form input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.form input[type="submit"]:hover{ 
+    background: whitesmoke;
+    color: black;
+}
+.select-box {
+  cursor: pointer;
+  position : relative;
+  max-width:  20em;
+  margin: auto auto;
+  width: 100%;
+}
+
+.select,
+.label {
+  color: #414141;
+  display: block;
+  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+  border-radius:15px;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 3px 0;
+  height: 40px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+}
+.select-box1 {
+  background: #ececec;
+}
+
+.label {
+  position: relative;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.open .label::after {
+   content: "▲";
+}
+.label::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 3px 15px;
+  border-left: 5px solid #fff;
+}
